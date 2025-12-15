@@ -46,7 +46,7 @@ async function monitorInbox(token, email) {
 
 // Root route for browser testing
 app.get('/', (req, res) => {
-    res.send('Mail.tm backend is running. Use POST /create-account to create accounts.');
+    res.send('Mail.tm backend is running. gwn fella');
 });
 
 // Create account endpoint
@@ -88,3 +88,4 @@ app.post('/create-account', async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
