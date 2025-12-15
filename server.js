@@ -44,6 +44,11 @@ async function monitorInbox(token, email) {
     }, POLL_INTERVAL);
 }
 
+// Root route for browser testing
+app.get('/', (req, res) => {
+    res.send('Mail.tm backend is running. Use POST /create-account to create accounts.');
+});
+
 // Create account endpoint
 app.post('/create-account', async (req, res) => {
     try {
